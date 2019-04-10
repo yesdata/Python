@@ -1,0 +1,20 @@
+# _*_ coding: utf-8 _*_ //为了解决Python2.X版本支持中文的意思
+# Author:Joey ma
+
+#!/usr/bin/python
+
+#!usr/bin/env python
+
+解释：
+
+#!/usr/bin/env python
+这种写法在你机器上安装了多个版本的python的时候有意义，这样声明的时候，
+会去取你机器的 PATH 中指定的第一个 python 来执行你的脚本。如果这时候你又配置了虚拟环境的话，
+那么这样写可以保证脚本会使用你虚拟环境中的 python 来执行。
+
+#!/usr/bin/python
+表示写死了就是要 /usr/bin/python 这个目录下 python 来执行你的脚本。
+这样写程序的可移植性就差了，如果此路径下python命令不存在就会报错。
+
+所以一般情况还是用第一种写法。
+
